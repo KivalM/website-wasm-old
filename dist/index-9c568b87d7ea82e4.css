@@ -1,0 +1,54 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+  height: 100%;
+}
+
+@font-face {
+  font-family: "lupine";
+  src: url("/static/fonts/LUPINES demo.ttf") format("truetype");
+}
+header {
+  background-image: url("/static/img/header.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.title {
+  color: white;
+  font-family: "lupine";
+  transition: letter-spacing 0.4s;
+  font-size: 5rem;
+}
+
+.title:hover {
+  letter-spacing: 0.6rem;
+}
+
+.header-lnk {
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.header-btn {
+  color: white;
+  font-family: "lupine";
+  background-color: transparent;
+  border: none;
+  border-bottom: 2px solid white;
+  transition: letter-spacing 0.4s;
+  font-size: 2rem;
+}
+
+.header-btn:hover {
+  letter-spacing: 0.6rem;
+}/*# sourceMappingURL=index.css.map */
