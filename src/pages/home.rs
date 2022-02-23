@@ -20,6 +20,7 @@ impl Component for Home {
                 <button class="header-btn">{"see.more"}</button>
                 </a>
             </header>
+
         }
     }
 }
