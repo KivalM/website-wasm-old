@@ -3,6 +3,7 @@ body {
   padding: 0;
   margin: 0;
   height: 100%;
+  background-color: black;
 }
 
 @font-face {
@@ -18,6 +19,8 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: blur;
+  overflow: hidden;
 }
 
 .title {
@@ -51,4 +54,13 @@ header {
 
 .header-btn:hover {
   letter-spacing: 0.6rem;
+}
+
+.blur-bg {
+  transition: 0.4s filter linear;
+  filter: blur(10px);
+}
+
+.hide {
+  visibility: hidden;
 }/*# sourceMappingURL=index.css.map */

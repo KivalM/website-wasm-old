@@ -8,13 +8,39 @@
     <title>Kival Mahadew</title>
     <link rel="preload" href="/static/fonts/LUPINES demo.ttf" as="font" type="font/truetype" crossorigin="">
     <!--custom css-->
-    <link rel="stylesheet" href="/index-3283495fead3e147.css">
+    <link rel="stylesheet" href="/index-1556cbd7026e9f02.css">
     <!--static files-->
     
   
-<link rel="preload" href="/index-baefe68afd1f50b4_bg.wasm" as="fetch" type="application/wasm" crossorigin="">
-<link rel="modulepreload" href="/index-baefe68afd1f50b4.js"></head>
+<link rel="preload" href="/index-89edc8907a95d5a7_bg.wasm" as="fetch" type="application/wasm" crossorigin="">
+<link rel="modulepreload" href="/index-89edc8907a95d5a7.js"></head>
 
   <body id="body">
 
-<script type="module">import init from '/index-baefe68afd1f50b4.js';init('/index-baefe68afd1f50b4_bg.wasm');</script></body></html>
+<script type="module">import init from '/index-89edc8907a95d5a7.js';init('/index-89edc8907a95d5a7_bg.wasm');</script><script>(function () {
+    var url = 'ws://' + window.location.host + '/_trunk/ws';
+    var poll_interval = 5000;
+    var reload_upon_connect = () => {
+        window.setTimeout(
+            () => {
+                // when we successfully reconnect, we'll force a
+                // reload (since we presumably lost connection to
+                // trunk due to it being killed, so it will have
+                // rebuilt on restart)
+                var ws = new WebSocket(url);
+                ws.onopen = () => window.location.reload();
+                ws.onclose = reload_upon_connect;
+            },
+            poll_interval);
+    };
+
+    var ws = new WebSocket(url);
+    ws.onmessage = (ev) => {
+        const msg = JSON.parse(ev.data);
+        if (msg.reload) {
+            window.location.reload();
+        }
+    };
+    ws.onclose = reload_upon_connect;
+})()
+</script></body></html>
