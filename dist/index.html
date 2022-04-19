@@ -8,39 +8,14 @@
     <title>Kival Mahadew</title>
     <link rel="preload" href="/static/fonts/LUPINES demo.ttf" as="font" type="font/truetype" crossorigin="">
     <!--custom css-->
-    <link rel="stylesheet" href="/index-1556cbd7026e9f02.css">
+    <link rel="stylesheet" href="/index-b7312d3c2cd59349.css">
     <!--static files-->
     
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   
-<link rel="preload" href="/index-89edc8907a95d5a7_bg.wasm" as="fetch" type="application/wasm" crossorigin="">
-<link rel="modulepreload" href="/index-89edc8907a95d5a7.js"></head>
+<link rel="preload" href="/index-478cfcc48b777fc0_bg.wasm" as="fetch" type="application/wasm" crossorigin="">
+<link rel="modulepreload" href="/index-478cfcc48b777fc0.js"></head>
 
   <body id="body">
 
-<script type="module">import init from '/index-89edc8907a95d5a7.js';init('/index-89edc8907a95d5a7_bg.wasm');</script><script>(function () {
-    var url = 'ws://' + window.location.host + '/_trunk/ws';
-    var poll_interval = 5000;
-    var reload_upon_connect = () => {
-        window.setTimeout(
-            () => {
-                // when we successfully reconnect, we'll force a
-                // reload (since we presumably lost connection to
-                // trunk due to it being killed, so it will have
-                // rebuilt on restart)
-                var ws = new WebSocket(url);
-                ws.onopen = () => window.location.reload();
-                ws.onclose = reload_upon_connect;
-            },
-            poll_interval);
-    };
-
-    var ws = new WebSocket(url);
-    ws.onmessage = (ev) => {
-        const msg = JSON.parse(ev.data);
-        if (msg.reload) {
-            window.location.reload();
-        }
-    };
-    ws.onclose = reload_upon_connect;
-})()
-</script></body></html>
+<script type="module">import init from '/index-478cfcc48b777fc0.js';init('/index-478cfcc48b777fc0_bg.wasm');</script></body></html>
