@@ -36,7 +36,7 @@ header {
   color: white;
   font-family: "lupine";
   transition: letter-spacing 0.4s;
-  font-size: 4rem;
+  font-size: 3rem;
   transition: 0.4s opacity linear;
   transition: 0.4s filter linear;
 
@@ -45,6 +45,7 @@ header {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  text-align: center;
   z-index: 2;
 
   a {
