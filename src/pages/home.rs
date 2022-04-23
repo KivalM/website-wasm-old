@@ -33,9 +33,9 @@ impl Component for Home {
             <div class={c} onclick={onclick2}></div>
             <div class={d}>
 
-                    <a href="https://github.com/KivalM"><i class="fa-brands fa-github"></i>{"KivalM"}</a>
-                    <a href="https://linkedin.com/in/kivalm"><i class="fa-brands fa-linkedin"></i>{"Kival Mahadew"}</a>
-                    <a href="https://www.instagram.com/uwukival/"><i class="fa-brands fa-instagram"></i>{"uwukival"}</a>
+                    <a href="https://github.com/KivalM" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i>{"KivalM"}</a>
+                    <a href="https://linkedin.com/in/kivalm" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin"></i>{"Kival Mahadew"}</a>
+                    <a href="https://www.instagram.com/uwukival/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-instagram"></i>{"uwukival"}</a>
 
             </div>
             <div class={v} {onclick}>
