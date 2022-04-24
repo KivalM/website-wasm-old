@@ -36,6 +36,7 @@ impl Component for Home {
                     <a href="https://github.com/KivalM" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i>{"KivalM"}</a>
                     <a href="https://linkedin.com/in/kivalm" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin"></i>{"Kival Mahadew"}</a>
                     <a href="https://www.instagram.com/uwukival/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-instagram"></i>{"uwukival"}</a>
+                    <a href="mailto:kivalm@protonmail.com" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-at"></i>{"kivalm@protonmail.com"}</a>
 
             </div>
             <div class={v} {onclick}>
